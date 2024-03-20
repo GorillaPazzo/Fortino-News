@@ -1,0 +1,428 @@
+/* Resetting default margins, padding, setting height to 100% and background color */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(110, 110, 91);
+    user-select: none; /* Preventing text selection */
+}
+
+/* Styling for the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto; /* Centering horizontally */
+    border: 7px; /* Missing border style */
+}
+.member-item{
+    margin-bottom:10% ;
+    font-size: 270%;
+    color: #ffd277;
+    -webkit-text-stroke: 1px #000000;
+    text-align: center;
+    border: 10px #77530a;
+    
+}
+.new-member-name{
+    color: black;
+    margin-left: 12%;
+    outline-style: inset;
+    background-color: #F9E4BC;
+    
+    
+}
+.add-member-btn {
+  width: 50%;
+  margin-top:30px; 
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+  margin-left: 25%;
+  
+}
+
+.add-member-btn:before {
+  position: absolute;
+  content: "Aggiungi Gentleman";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+
+.add-member-btn:hover {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.add-member-btn:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.add-member-btn:active {
+  transform: scale(0.95);
+}
+.increase-btn {
+  margin-top:20px; 
+  width: 40%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+  font-size: 40%;
+  -webkit-text-stroke: 0px; 
+}
+.increase-btn:before{
+    position: absolute;
+  content: "Aggiungi";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+.increase-btn:hover{
+    background-position: right;
+  transition-duration: 1s;
+}
+.increase-btn:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.increase-btn:active {
+  transform: scale(0.95);
+}
+
+.decrease-btn {
+  width: 40%;;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+  font-size: 36%;
+  -webkit-text-stroke: 0px;
+   
+}
+
+.decrease-btn:before{
+    position: absolute;
+  content: "Diminuisci";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+.decrease-btn:hover{
+    background-position: right;
+  transition-duration: 1s;
+}
+.decrease-btn:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.decrease-btn:active {
+  transform: scale(0.95);
+}
+.reset-btn {
+  width: 30%;;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right,#77530a,#ffd277,#77530a,#77530a,#ffd277,#77530a);
+  background-size: 250%;
+  background-position: left;
+  color: #ffd277;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 1s;
+  overflow: hidden;
+  font-size: 40%;
+  -webkit-text-stroke: 0px;
+}
+.reset-btn:before{
+    position: absolute;
+  content: "Reset";
+  color: #ffd277;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 97%;
+  height: 90%;
+  border-radius: 8px;
+  transition-duration: 1s;
+  background-color: rgba(0, 0, 0, 0.842);
+  background-size: 200%;
+}
+.reset-btn:hover{
+    background-position: right;
+  transition-duration: 1s;
+}
+.reset-btn:hover::before {
+  background-position: right;
+  transition-duration: 1s;
+}
+
+.reset-btn:active {
+  transform: scale(0.95);
+}
+ul {
+    
+    list-style: none; /* Removing default list styles */
+    
+}
+
+
+a {
+   color: #000000;
+   padding: 35px; /* Adding padding */
+   font-size: 45px; 
+   text-align: center;
+}
+
+/* Styling for Micro 5 font */
+.micro-5-regular {
+    font-family: "Micro 5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.outer-border {
+    border: 2px solid #DE9B72;
+    min-height: 100vh; /* Adjust height to cover the entire viewport */
+    width: 100vw; /* Adjust width to cover the entire viewport */
+    margin: 0; /* Remove auto margin */
+    padding: 3px; /* Remove padding */
+    position: relative;
+}
+
+/* Styling for middle border */
+.mid-border {
+    border: 6px solid #DE9B72;
+    height: calc(100% - 12px); /* Adjust height to account for border width */
+    width: calc(100% - 12px); /* Adjust width to account for border width */
+    margin: auto;
+}
+
+/* Styling for inner border */
+.inner-border {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    border: 2px solid #DE9B72;
+    height: calc(100% - 6px); /* Adjust to account for margin and border */
+    width: calc(100% - 6px); /* Adjust to account for margin and border */
+    margin: 3px;
+    padding: 6px; /* Add padding */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Styling for corner decoration */
+.corner-decoration {
+    position: fixed;
+}
+h1 {
+    text-align: center;
+    font-size: 250%;
+    margin-bottom: auto;
+    color: #db9a59;
+    position: relative; 
+    -webkit-text-stroke: 1px #000000; /* Adding a stroke to text */
+}
+
+/* Styling for vertical and corner decorations */
+.vertical-decoration,
+.corner-decoration {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 15em;  
+}
+
+/* Styling for specific corner decorations */
+.corner-decoration.corner-left-top {
+    width: 13%;
+    left: -87%;
+    top: 0px; 
+}
+
+.corner-decoration.corner-right-top {
+    width: 13%;
+    top: 0px;
+    right: -87%;
+    transform: rotate(90deg);
+}
+
+.corner-decoration.corner-right-bottom {
+    width: 13%;
+    right:-87%;
+    bottom: 0px;
+    transform: rotate(180deg);
+}
+
+.corner-decoration.corner-left-bottom {
+    width: 13%;
+    bottom: 0px;
+    left: -87%;
+    transform: rotate(-90deg);
+}
+
+/* Styling for top and bottom vertical decorations */
+.vertical-decoration.top {
+    top: 0;
+    width: 45%;
+}
+
+.vertical-decoration.bottom {
+    bottom: 0px;
+    margin-top: 30px; /* Add some spacing */
+    transform: rotate(180deg);
+    width: 200px;
+}
+
+/* Styling for dark background */
+.dark-background {
+    background: var(--dark-color);
+    display: flex;
+    margin: 0;
+    border: 0;
+    flex-wrap: wrap;
+}
+.spectral-sc-extralight {
+  font-family: "Spectral SC", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.spectral-sc-light {
+  font-family: "Spectral SC", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.spectral-sc-regular {
+  font-family: "Spectral SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.spectral-sc-medium {
+  font-family: "Spectral SC", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.spectral-sc-semibold {
+  font-family: "Spectral SC", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.spectral-sc-bold {
+  font-family: "Spectral SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.spectral-sc-extrabold {
+  font-family: "Spectral SC", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.spectral-sc-extralight-italic {
+  font-family: "Spectral SC", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.spectral-sc-light-italic {
+  font-family: "Spectral SC", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.spectral-sc-regular-italic {
+  font-family: "Spectral SC", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.spectral-sc-medium-italic {
+  font-family: "Spectral SC", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.spectral-sc-semibold-italic {
+  font-family: "Spectral SC", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.spectral-sc-bold-italic {
+  font-family: "Spectral SC", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.spectral-sc-extrabold-italic {
+  font-family: "Spectral SC", serif;
+  font-weight: 800;
+  font-style: italic;
+}

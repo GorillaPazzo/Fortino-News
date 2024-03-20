@@ -1,0 +1,214 @@
+/* Resetting default margins, padding, setting height to 100% and background color */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgb(110, 110, 91);
+    user-select: none; /* Preventing text selection */
+}
+
+/* Styling for the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    margin: 30px auto; /* Centering horizontally */
+    border: 7px; /* Missing border style */
+}
+
+/* Styling for the news list items */
+#news-list li {
+    font-size: 30px; 
+    color: #db9a59;
+    margin-bottom: 10px; 
+    
+}
+
+/* Styling for unordered lists */
+ul {
+    list-style: none; /* Removing default list styles */
+    padding: 1; /* Incorrect padding value */
+    flex-wrap: wrap; /* Making list items wrap */
+}
+
+/* Styling for anchor tags */
+a {
+   color: #000000;
+   padding: 35px; /* Adding padding */
+   font-size: 45px; 
+   text-align: center;
+}
+
+/* Styling for list items */
+ul li {
+    background-color: #000000;
+    padding: 15px;
+    box-shadow: 0px 1px 1px #db9a59;
+    border-radius: 10px;
+    flex-grow: 1; /* Making list items grow */
+    color: #e6cf80; /* Colore testo nel bottone */
+}
+
+/* Styling for list items on hover */
+ul li:hover {
+    background-color: #F9E4BC;
+    color: white;
+}
+
+/* Styling for images */
+img {
+    width: 320px;
+    margin: 0 auto; /* Centering horizontally */
+    border-radius: 8px;
+}
+
+/* Styling for Micro 5 font */
+.micro-5-regular {
+    font-family: "Micro 5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Styling for input and button elements */
+input, button {
+    border: 0;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 150%;
+    text-align: center;
+    color: #e6cf80;
+    background-color: #000000;
+    margin-top: 10px;
+    -webkit-text-stroke: 1px #000000; /* Adding a stroke to text */
+}
+
+/* Styling for buttons */
+button {
+    color: #d4af37;
+    transition-duration: 0.4s;
+    cursor: crosshair;   
+}
+
+/* Styling for buttons on hover */
+button:hover {
+    background-color: #C2B293;
+    color: black;
+}
+
+/* Styling for outer border */
+.outer-border {
+    border: 2px solid #DE9B72;
+    min-height: 100vh; /* Adjust height to cover the entire viewport */
+    width: 100vw; /* Adjust width to cover the entire viewport */
+    margin: 0; /* Remove auto margin */
+    padding: 3px; /* Remove padding */
+    position: relative;
+}
+
+/* Styling for middle border */
+.mid-border {
+    border: 6px solid #DE9B72;
+    height: calc(100% - 12px); /* Adjust height to account for border width */
+    width: calc(100% - 12px); /* Adjust width to account for border width */
+    margin: auto;
+}
+
+/* Styling for inner border */
+.inner-border {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    border: 2px solid #DE9B72;
+    height: calc(100% - 6px); /* Adjust to account for margin and border */
+    width: calc(100% - 6px); /* Adjust to account for margin and border */
+    margin: 3px;
+    padding: 6px; /* Add padding */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Styling for corner decoration */
+.corner-decoration {
+    position: fixed;
+}
+
+/* Styling for the Fort drawing */
+.fort-drawing {
+    mix-blend-mode: multiply;
+    width: 100%;
+}
+
+/* Styling for h1 */
+h1 {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: auto;
+    color: #db9a59;
+    position: relative; 
+    -webkit-text-stroke: 2px #000000; /* Adding a stroke to text */
+}
+
+/* Styling for vertical and corner decorations */
+.vertical-decoration,
+.corner-decoration {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 15em;  
+}
+
+/* Styling for specific corner decorations */
+.corner-decoration.corner-left-top {
+    width: 13%;
+    left: -87%;
+    top: 0px; 
+}
+
+.corner-decoration.corner-right-top {
+    width: 13%;
+    top: 0px;
+    right: -87%;
+    transform: rotate(90deg);
+}
+
+.corner-decoration.corner-right-bottom {
+    width: 13%;
+    right:-87%;
+    bottom: 0px;
+    transform: rotate(180deg);
+}
+
+.corner-decoration.corner-left-bottom {
+    width: 13%;
+    bottom: 0px;
+    left: -87%;
+    transform: rotate(-90deg);
+}
+
+/* Styling for top and bottom vertical decorations */
+.vertical-decoration.top {
+    top: 0;
+    width: 45%;
+}
+
+.vertical-decoration.bottom {
+    bottom: 0px;
+    margin-top: 30px; /* Add some spacing */
+    transform: rotate(180deg);
+    width: 200px;
+}
+
+/* Styling for dark background */
+.dark-background {
+    background: var(--dark-color);
+    display: flex;
+    margin: 0;
+    border: 0;
+    flex-wrap: wrap;
+}
+.spectral-sc-bold {
+  font-family: "Spectral SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
